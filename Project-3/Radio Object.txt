@@ -1,0 +1,44 @@
+Objective: We are going to create an object Radio! 
+
+ 
+
+How to begin: 
+
+Create a new HTML/CSS/JS replLinks to an external site.Links to an external site. page and complete the following in your .js file
+Give it a property called stations and make the value an array of station objects
+Give each station object a property called name and songs. Name should be a string and should be an array of song objects.
+Song object should have two properties: title and artist
+Create a currentStation property on your radio object
+Create a method on your radio object that changes the station. 
+When the station is changed, pick a song from that station console.log("Now Playing:" + song,title + "by" + song.artist)
+ 
+
+Submission: Submit a share link of your file here! 
+
+ 
+
+Happy coding!
+
+ 
+
+
+// PART 2 THE DOM
+/*
+
+Directions
+This morning we will be taking the radio object that you built yesterday and integrate that into the DOM
+
+Setup:
+1. In the same folder as yesterday, make an index.html and style.css file.
+
+2. Link your CSS and JS to the index.html
+
+Requirements:
+1. There must be HTML elements that display the current station and song on the radio.
+
+2. There must be a button that when pressed, will change the station. The elements that display the current station and song should be updated when the button is pressed.
+
+Don't overcomplicate this. You already have all of the contents in your radio object to display.
+
+Think about the HTML element you can use and how we can manipulate them once an event occurs.
+Look back on the W4D2 lesson, where we added comments to the <ul> with the click of a button!

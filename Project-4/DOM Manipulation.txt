@@ -1,0 +1,69 @@
+DOM Manipulation
+Can you really manipulate The DOM though?
+
+Dom Toretto
+
+Yea I didn't think so... Thankfully we're not talking about that Dom.
+
+Today we're going to be practicing DOM manipulation and event handling.
+
+Links to an external site.Learning Objectives
+DOM Manipulation
+Event Handling
+Links to an external site.Resources
+This DOM GistLinks to an external site. has a helpful section on DOM querying and creation
+
+Links to an external site.Setup
+You're provided a basic website with included index.html, style.css, and script.js plus a new file type called a TTF File for fonts. All of your work will go in script.js - you shouldn't have to edit index.html or style.css. Please create individual functions for each solution. Don't forget to call the function once you're finished. All of the files you need can be accessed by navigating to your hw folder in your terminal and running the following commands one by one.
+
+Links to an external site.Enter your software_homework/unit_1 directory
+pwd
+Links to an external site.The above command will ensure that you check that you are in the correct folder
+  git clone https://github.com/JoshuaMillerCode/dom-manipulation-starter.git ./manipulate-the-dom
+Links to an external site.This command will copy my starter code from github that is at https://github.com/JoshuaMillerCode/dom-manipulation-starter and put it into a folder called manipulate-the-dom for you, you may have to login to github with your username and password
+  cd manipulate-the-dom
+Links to an external site.This command will change into the manipulate-the-dom directory that we just made
+  git remote remove origin
+Links to an external site.This command will remove the connection between my repository and your folder. This will allow you to go to github.com/new and create a blank repo, and add that blank repo as your new origin with git remote add origin LINKTOREPOHERE, then you can git add -A and git commit -m "message" and git push origin masteras needed.
+Links to an external site.Completion
+Give it your best shot!
+
+Links to an external site.Accessing DOM Elements (Querying)
+Let's start with some simple query selecting.
+
+Links to an external site.Part 1
+DOM's personal website title is a bit wordy. Write a JavaScript statement that selects the #main-title ID element. Remember there are a couple of ways to query id. Change the text of the title to something shorter.
+
+Links to an external site.Part 2
+Select the body and change the background-color to a new color of your choice.
+
+Links to an external site.Part 3
+Select DOM's Favorite Things list and remove the last list item.
+
+Links to an external site.Part 4
+Select all .special-title class elements and change their font-size to 2rem. Remember you might have to iterate through the list of elements
+
+Links to an external site.Part 5
+Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
+
+Links to an external site.Creating New DOM Elements
+Links to an external site.Part 6
+Let's add to DOM's Past Races list. Create a new <li> element, change the new <li> text to the name of a city, and append it to the Past Races list.
+
+Links to an external site.Part 7
+Create a new .blog-post corresponding to the new city added in Part 6. You will have to create a new <div> with class of .blog-post, a new <h2> with text, and a new <p> with some text. Think about what order you want to create the elements, and what order you want to append them in.
+
+Links to an external site.Event Handlers
+Links to an external site.Part 8
+When you reload the page, the script.js file loads a random DOM quote. Let's play with the included function:
+
+const randomQuote = function() {
+  document.querySelector('#quote-of-the-day').innerText = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+};
+Query select the #quote-title ID element and add a click event handler. That event handler should use the function randomQuotewhenever #quote-title is clicked.
+
+Links to an external site.Part 9
+Select all .blog-post class elements. Iterate through the list of .blog-post class elements and apply two event handlers to each node. The first event handler should be listening for mouseout events while the second handler should be listening for mouseenter events.
+
+The mouseouthandler should toggle the class .purple
+The mouseenterhandler should toggle the class .red
